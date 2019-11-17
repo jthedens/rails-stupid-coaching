@@ -1,0 +1,19 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$gray: #F4F4F4;
+$nice: #CC5A71;
+
+body {
+  background: $gray;
+  display: box;
+}
+
+#btn {
+  background-color: $nice;
+}
+
+.link-btn {
+
+}

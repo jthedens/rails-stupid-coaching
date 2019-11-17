@@ -1,0 +1,21 @@
+<h1>Stupid Coaching</h1>
+
+<% if params[:question] == "I am going to work" %>
+  <%= params[:question] %> <%= "- you" %>
+  <br>
+  <%= "Great" %> <%= "- coach" %>
+  <% elsif params[:question].include?("?") %>
+  <%= params[:question] %> <%= "- you" %>
+  <br>
+  <%= "Silly question, get dressed and go to work!" %> <%= "- coach" %>
+  <% else %>
+  <%= params[:question] %> <%= "- you" %>
+  <br>
+  <%= "I don't care, get dressed and go to work!" %> <%= "- coach" %>
+<% end %>
+
+<br>
+<br>
+<div class="link-btn">
+<%= link_to "Ask a new question", "/ask" %>
+</div>
